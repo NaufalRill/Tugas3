@@ -27,6 +27,11 @@ class KilometerToMeterConverter {
 
         return kilometers * 1000;
     }
+
+    public double convertToCentimeters() {
+
+        return kilometers * 10000;
+    }
     /**
      * Mengkonversi Kilometer ke bentuk Meter
      */
@@ -46,8 +51,9 @@ public class Main {
         KilometerToMeterConverter converter = new KilometerToMeterConverter(kilometers);
 
         double meters = converter.convertToMeters();
+        double centimeters = converter.convertToCentimeters();
 
-        System.out.println(kilometers + " kilometer sama dengan " + meters + " meter.");
+        System.out.println(kilometers + " kilometer sama dengan " + meters + " meter dan " + centimeters + " centimeter.");
         /**
          * Menampilkan hasil konversi KilometerToMeter
          */
